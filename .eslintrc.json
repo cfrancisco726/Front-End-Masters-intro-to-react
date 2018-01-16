@@ -1,6 +1,6 @@
 {
   "extends": [
-    "airbnd",
+    "airbnb",
     "prettier",
     "prettier/react"
   ],
