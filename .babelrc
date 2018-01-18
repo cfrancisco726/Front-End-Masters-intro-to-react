@@ -1,5 +1,4 @@
-{
-	// does all jsx and flow translations  
+{ 
 	"presets": [
 		"react",
 		["env", {

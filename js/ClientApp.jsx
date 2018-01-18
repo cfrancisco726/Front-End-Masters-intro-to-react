@@ -1,4 +1,5 @@
 import React from 'react';
+// same as const React = require('react') ..non es6
 import { render } from 'react-dom';
 
 const App = () => (
