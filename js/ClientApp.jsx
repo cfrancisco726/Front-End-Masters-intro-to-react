@@ -1,29 +1,22 @@
 import React from 'react';
-// same as const React = require('react') ..non es6
 import { render } from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Landing from './Landing';
+import Search from './Search';
 
-// const App = () => (
-//   <div className='app'>
-//     <div className='landing'>
-//       <h1>svideo</h1>
-//       <input type='text' placeholder='Search' />
-//       <a>or Browse all</a>
-//     </div>
-//   </div>
-// );
-//
-// render(<App />, document.getElementById('app'));
+const FourOhFour = () => <h1>404</h1>;
 
-const App = () => {
-  return ( //if one line then implicit return otherwise you would need return {}
-    <div className='app'>
-      <div className='landing'>
-        <h1>svideo</h1>
-        <input type='text' placeholder='Search' />
-        <a>or Browse All</a>
-      </div>
+const App = () => (
+  <BrowserRouter>
+    <div className="app">
+      <Switch>
+        <Route exact path ="/" component={Landing} />
+        <Route path ="/search" component={Search} />
+        {/* comment out */}
+        <Route component={FourOhFour} />
+      </Switch>
     </div>
-  );
-};
+  </BrowserRouter>
+);
 
 render(<App />, document.getElementById('app'));

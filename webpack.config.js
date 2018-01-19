@@ -17,6 +17,13 @@ module.exports = {
 		// assured that it will always land on public directory no matter where we land in out project
 		filename: 'bundle.js'
 	},
+	devServer: {
+		publicPath: '/public/',
+		// lets webpack know where you anticipate your bundle being searched from
+		historyApiFallback: true
+		// tells dev server if you don't recognize something send to client
+		// with out this you will get 404 for search
+	},
 	resolve: {
 		extensions: ['.js', '.jsx', '.json']
 	},
@@ -30,6 +37,12 @@ module.exports = {
 
 	module: {
 		rules: [
+			{
+				enforce: 'pre',
+				test: /\.jsx?$/,
+				loader: 'eslint-loader',
+				exclude: /node_modules/
+			},
 			// array of rules that webpack will apply different loaders
 			// loaders are tools that webpack will use ie babel
 			{
