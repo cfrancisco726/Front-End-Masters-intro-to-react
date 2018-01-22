@@ -23,6 +23,7 @@ module.exports = {
 		historyApiFallback: true
 		// tells dev server if you don't recognize something send to client
 		// with out this you will get 404 for search
+		// allows browser router to work
 	},
 	resolve: {
 		extensions: ['.js', '.jsx', '.json']
