@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders correctly 1`] = `
+<div
+  className="search"
+>
+  <header>
+    <h1>
+      svideo
+    </h1>
+    <input
+      onChange={[Function]}
+      placeholder="Search"
+      type="text"
+      value="game"
+    />
+  </header>
+  <div>
+    <div
+      className="sc-bdVaJa jfzRHo"
+    >
+      <img
+        alt="Game of Thrones Show Poster"
+        className="sc-bwzfXH cSKlVC"
+        src="/public/img/posters/got.jpg"
+      />
+      <div>
+        <h3>
+          Game of Thrones
+        </h3>
+        <h4>
+          (
+          2011–
+          )
+        </h4>
+        <p>
+          Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
